@@ -1,0 +1,20 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.lib
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+# VS Code settings
+.vscode/
