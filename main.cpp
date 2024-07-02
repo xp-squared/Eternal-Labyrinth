@@ -13,14 +13,15 @@ void intro() {
 }
 
 int main() {
-    
+
     string playerName;
     intro();
 
     cout << "What is your name traveller? ";
     getline(cin, playerName);
-    Player user;
+    Player user(playerName);
     
+
     cout << user.getName() << ", what class will you choose?\n";
 
 

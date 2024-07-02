@@ -31,7 +31,7 @@ class Player {
     private:
         string name;
         int health;
-        vector<Item> inventory;
+        // vector<Item> inventory;
         //vector<Ally> allies;
 
 };
