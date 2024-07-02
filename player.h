@@ -3,16 +3,23 @@
 
 #include <string>
 #include <vector> 
+#include "item.h"
+//#include "Ally.h"
 
 using namespace std;
 
 class Player {
     public:
+        Player();
         Player(string name);
-        //void addItem(Item item);
+
+        void addItem(Item item);
         //void addAlly(Ally ally);
         void showInventory() const;
         // void showAllies() const;
+
+
+
 
         // getters and setters
         string getName() const;
@@ -24,7 +31,7 @@ class Player {
     private:
         string name;
         int health;
-        //vector<Item> inventory;
+        vector<Item> inventory;
         //vector<Ally> allies;
 
 };

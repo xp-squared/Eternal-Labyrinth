@@ -1,6 +1,11 @@
 #include "player.h"
 #include <iostream>
 
+Player::Player() {
+    name = "Unknown";
+    health = 1;
+}
+
 Player::Player(string name) {
     this->name = name;
     this->health = 100;
