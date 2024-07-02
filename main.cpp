@@ -5,11 +5,13 @@
 using namespace std;
 
 void intro() {
-    cout << "\n***********************************************************************\nWelcome to Eternal Labyrinth, a text based game created by Zane Christe\n***********************************************************************\n\n";
+    cout << "\n***********************************************************************\nWelcome to Eternal Labyrinth, a text based game created by Zane Christe\n***********************************************************************\n";
+
 }
 
 int main() {
     intro();
+    
 
     return 0;
 }
