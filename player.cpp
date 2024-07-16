@@ -1,14 +1,10 @@
 #include "player.h"
 #include <iostream>
 
-Player::Player() {
-    name = "Unknown";
-    health = 1;
-}
-
-Player::Player(string name) {
+Player::Player(string name, Class* playerClass) {
     this->name = name;
-    this->health = 100;
+    this->health = playerClass->getInitialHealth();
+    this->playerClass = playerClass;
 }
 
 string Player::getName() const {
@@ -17,4 +13,12 @@ string Player::getName() const {
 
 int Player::getHealth() const {
     return health;
+}
+
+string Player::getClassName() const {
+    return this->playerClass->getName();
+}
+
+string Player::getSpecialAbility() const {
+    return this->playerClass->getSpecialAbility();
 }
