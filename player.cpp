@@ -22,3 +22,15 @@ string Player::getClassName() const {
 string Player::getSpecialAbility() const {
     return this->playerClass->getSpecialAbility();
 }
+
+void Player::increaseHealth(int amount) {
+    health =+ amount
+}
+
+void Player::decreaseHealth(int amount) {
+    health =- amount
+}
+
+void Player::setHealth(int amount) {
+    health = amount;
+}

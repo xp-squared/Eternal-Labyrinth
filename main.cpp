@@ -5,6 +5,11 @@
 //#include "ally.h"
 
 
+
+/*
+things to add:
+-player class maybe should have current health and max health to keep proper track of damage
+*/
 using namespace std;
 
 void intro() {
