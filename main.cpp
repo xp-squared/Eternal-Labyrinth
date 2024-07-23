@@ -12,6 +12,15 @@ void intro() {
     cout << "\nBLahBlahBlah add descriptors intro cool shit haha\n";
 }
 
+void showMenu() {
+    cout << "1. Explore current level: " << endl;
+    cout << "2. Show Inventory" << endl;
+    cout << "3. Show Ally Information" << endl;
+    cout << "4. Move to next level" << endl;
+    cout << "5. Quit" << endl;
+
+}
+
 Class* chooseClass() {
     cout << "Choose your class:" << endl;
     cout << "1. Wizard" << endl;
@@ -51,7 +60,7 @@ int main() {
 
     bool gameRunning = true;
 
-    /*
+    
     while (gameRunning) {
         showMenu();
         int choice;
@@ -59,24 +68,28 @@ int main() {
 
         switch (choice) {
             case 1:
+                // exploreLevel();
+                // implement exploring level and rng sequence of encountering monsters
+                // as well make a counter of how many times player has explored the level so there is nothing left to find
+            case 2:
                 user.showInventory();
                 break;
-            case 2:
+            case 3:
                 //user.showAllies(); 
                 cout << "Allies feature not implemented yet.\n";
                 break;
-            case 3:
+            case 4:
                 // Logic for exploring next level
                 cout << "You explore the next level...\n";
                 break;
-            case 4:
+            case 5:
                 gameRunning = false;
                 break;
             default:
                 cout << "Invalid choice. Try again.\n";
         }
     }
-    */
+    
 
     cout << "Thank you for playing!" << endl;
     delete playerClass; 
