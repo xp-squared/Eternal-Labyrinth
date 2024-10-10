@@ -36,6 +36,7 @@ class Player {
         string name;
         int health;
         int gold;
+        int level;
         // vector<Item> inventory;
         //vector<Ally> allies;
         Class* playerClass;

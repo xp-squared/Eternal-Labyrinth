@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "player.h"
-#include "item.h"
+// #include "item.h"
+#include "level.h"
 //#include "ally.h"
 
 
@@ -69,12 +70,15 @@ int main() {
         showMenu();
         int choice;
         cin >> choice;
+        int currentFloor = 1;
 
         switch (choice) {
             case 1:
-                // exploreLevel();
+                cout << "Current Floor: " << currentFloor << "\n";
+                Level level(currentFloor);
                 // implement exploring level and rng sequence of encountering monsters
-                // as well make a counter of how many times player has explored the level so there is nothing left to find
+                // left off with deciding how monsters and gold should be found
+                // making luck factor, can keep exploring to find gold but may be chance to encounter a monster
             case 2:
                 // user.showInventory();
                 // break;
