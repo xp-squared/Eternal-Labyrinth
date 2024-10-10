@@ -107,6 +107,6 @@ int main() {
 }
 
 /*
-g++ main.cpp Player.cpp Item.cpp Class.cpp -o EternalLabyrinth
+g++ main.cpp Player.cpp Item.cpp Class.cpp Level.cpp -o EternalLabyrinth
 ./EternalLabyrinth
 */

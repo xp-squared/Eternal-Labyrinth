@@ -9,7 +9,7 @@ class Level {
         Level(int levelNumber);
 
     private:
-        int enemies;
+        int enemies; // implement where it makes an enemy object for us to fight
         int gold;
         int floorLuckFactor; // luck of finding gold or finding an enemy
         // implement trasure to find
