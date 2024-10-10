@@ -17,16 +17,16 @@ protected:
     string name;
 };
 
-class Wizard : public Class {
+class Warrior : public Class {
 public:
-    Wizard();
+    Warrior();
     int getInitialHealth() const override;
     string getSpecialAbility() const override;
 };
 
-class Warrior : public Class {
+class Wizard : public Class {
 public:
-    Warrior();
+    Wizard();
     int getInitialHealth() const override;
     string getSpecialAbility() const override;
 };

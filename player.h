@@ -13,15 +13,17 @@ class Player {
     public:
         Player(string name, Class* playerClass);
 
-        void addItem(Item item);
+        // void addItem(Item item);
         //void addAlly(Ally ally);
-        void showInventory() const;
+        //void showInventory() const;
         // void showAllies() const;
 
 
         // getters and setters
         string getName() const;
         int getHealth() const;
+        int getGold() const;
+        void setGold(int amount);
         void setHealth(int health);
         void increaseHealth(int amount);
         void decreaseHealth(int amount);
@@ -33,6 +35,7 @@ class Player {
     private:
         string name;
         int health;
+        int gold;
         // vector<Item> inventory;
         //vector<Ally> allies;
         Class* playerClass;

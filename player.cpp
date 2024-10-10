@@ -5,6 +5,7 @@ Player::Player(string name, Class* playerClass) {
     this->name = name;
     this->health = playerClass->getInitialHealth();
     this->playerClass = playerClass;
+    gold = 0;
 }
 
 string Player::getName() const {
@@ -24,13 +25,26 @@ string Player::getSpecialAbility() const {
 }
 
 void Player::increaseHealth(int amount) {
-    health =+ amount
+    health += amount;
 }
 
 void Player::decreaseHealth(int amount) {
-    health =- amount
+    health =- amount;
 }
 
 void Player::setHealth(int amount) {
     health = amount;
+}
+
+int Player::getGold() const {
+    return gold;
+}
+
+void Player::setGold(int amount) {
+    if (amount > 0) {
+        gold += amount;
+    }
+    else {
+        gold -= amount;
+    }
 }

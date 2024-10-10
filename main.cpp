@@ -14,23 +14,22 @@ using namespace std;
 
 void intro() {
     cout << "\n***********************************************************************\nWelcome to Eternal Labyrinth, a text based game created by Zane Christe\n***********************************************************************\n";
-    cout << "\nBLahBlahBlah add descriptors intro cool shit haha\n";
+    cout << "\nBLahBlahBlah add descriptors intro and other cool stuff\n";
 }
 
 void showMenu() {
-    cout << "1. Explore current level: " << endl;
-    cout << "2. Show Inventory" << endl;
-    cout << "3. Show Ally Information" << endl;
-    cout << "4. Move to next level" << endl;
-    cout << "5. Quit" << endl;
-
+   cout << "1. Explore current level: " << endl;
+   // cout << "2. Show Inventory" << endl;
+   // cout << "3. Show Ally Information" << endl;
+   // cout << "4. Move to next level" << endl;
+   cout << "5. Quit" << endl;
 }
 
 Class* chooseClass() {
     cout << "Choose your class:" << endl;
-    cout << "1. Wizard" << endl;
-    cout << "2. Warrior" << endl;
-    cout << "3. Knight" << endl;
+    cout << "1. Warrior" << endl;
+    // cout << "2. Wizard" << endl;
+    // cout << "3. Knight" << endl;
 
     int choice;
     cout << "Choice: ";
@@ -38,11 +37,11 @@ Class* chooseClass() {
 
     switch (choice) {
         case 1:
-            return new Wizard();
-        case 2:
             return new Warrior();
-        case 3:
-            return new Knight();
+        // case 2:
+        //    return new Wizard();
+        // case 3:
+        //    return new Knight();
         default:
             cout << "Invalid choice. Defaulting to Warrior." << endl;
             return new Warrior();
@@ -59,9 +58,9 @@ int main() {
     getline(cin, playerName);
     
 
-    Class* playerClass = chooseClass();
-    Player user(playerName, playerClass);
-    cout << endl << user.getName() << ", you have chosen the class " << user.getClassName() << " with the special ability: " << user.getSpecialAbility() << ".\n";
+    Class* playerClass = chooseClass(); // if 1 is chosen it returns new warrior
+    Player user(playerName, playerClass); 
+    cout << endl << user.getName() << ", you have chosen the class " << user.getClassName() << ".\nSpecial ability: " << user.getSpecialAbility() << ".\nCurrent Gold: " << user.getGold();
 
     bool gameRunning = true;
 
@@ -77,8 +76,8 @@ int main() {
                 // implement exploring level and rng sequence of encountering monsters
                 // as well make a counter of how many times player has explored the level so there is nothing left to find
             case 2:
-                user.showInventory();
-                break;
+                // user.showInventory();
+                // break;
             case 3:
                 //user.showAllies(); 
                 cout << "Allies feature not implemented yet.\n";
@@ -88,6 +87,7 @@ int main() {
                 cout << "You explore the next level...\n";
                 break;
             case 5:
+                cout << "Do you want to quit the game?";
                 gameRunning = false;
                 break;
             default:

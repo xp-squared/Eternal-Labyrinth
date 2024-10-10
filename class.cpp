@@ -8,16 +8,6 @@ string Class::getName() const {
     return this->name;
 }
 
-Wizard::Wizard() : Class("Wizard") {}
-
-int Wizard::getInitialHealth() const {
-    return 80;
-}
-
-string Wizard::getSpecialAbility() const {
-    return "Cast Fireball";
-}
-
 Warrior::Warrior() : Class("Warrior") {}
 
 int Warrior::getInitialHealth() const {
@@ -26,6 +16,18 @@ int Warrior::getInitialHealth() const {
 
 string Warrior::getSpecialAbility() const {
     return "Berserk Attack";
+}
+
+
+/*
+Wizard::Wizard() : Class("Wizard") {}
+
+int Wizard::getInitialHealth() const {
+    return 80;
+}
+
+string Wizard::getSpecialAbility() const {
+    return "Cast Fireball";
 }
 
 Knight::Knight() : Class("Knight") {}
@@ -37,3 +39,4 @@ int Knight::getInitialHealth() const {
 string Knight::getSpecialAbility() const {
     return "Shield Block";
 }
+*/
